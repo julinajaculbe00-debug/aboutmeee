@@ -1,0 +1,66 @@
+:root {
+--space-xs: 0.5rem;
+--space-sm: 0.75rem;
+--space-md: 1.5rem;
+--space-lg: 2rem;
+--clr-navy: #14213d;
+--clr-accent: #fca311;
+}
+
+.site-header {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: var(--space-sm) var(--space-md);
+background: var(--clr-navy);
+color: white;
+max-width: none;
+margin: 0 -3rem var(--space-lg);
+}
+
+.site-header .logo {
+color: white;
+font-weight: 700;
+text-decoration: none;
+}
+
+.nav-links {
+list-style: none;
+display: flex;
+gap: var(--space-md);
+}
+
+.nav-links a {
+color: white;
+text-decoration: none;
+}
+
+.nav-links a:hover {
+color: var(--clr-accent);
+}
+
+.nav-links a.current {
+text-decoration: underline;
+text-decoration-color: var(--clr-accent);
+text-decoration-thickness: 2px;
+text-underline-offset: 0.25rem;
+}
+
+.grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+gap: var(--space-md);
+margin-top: var(--space-md);
+}
+
+.card {
+padding: var(--space-md);
+border-radius: 12px;
+background: white;
+box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.card h3 {
+color: var(--clr-navy);
+margin-bottom: var(--space-xs);
+}
